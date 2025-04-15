@@ -154,6 +154,7 @@ Transform:
   - {fileID: 1744358256}
   - {fileID: 1657693131}
   - {fileID: 1801167348}
+  - {fileID: 664436124}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
@@ -375,6 +376,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &664436123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664436124}
+  - component: {fileID: 664436125}
+  m_Layer: 0
+  m_Name: NoteCallback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &664436124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664436123}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 478165433}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &664436125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664436123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230bdda7badb6374791bd19e1c4e9ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1657693129
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +577,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 32327c14-2c0e-49d5-ba92-f49b5f8d6616
     m_ActionName: Keyboard/PressKey
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 580a35ae-0935-46c2-a5b4-9e4e48005ed3
+    m_ActionName: Keyboard/PressC[/MidiDevice/note012,/MidiDevice/note024,/MidiDevice/note036,/MidiDevice/note048,/MidiDevice/note060,/MidiDevice/note072,/MidiDevice/note084,/MidiDevice/note096,/MidiDevice/note108,/MidiDevice/note120]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7ab706cf-12aa-4117-af71-0ae52eb110fa
+    m_ActionName: Keyboard/PressE[/MidiDevice/note016,/MidiDevice/note028,/MidiDevice/note040,/MidiDevice/note052,/MidiDevice/note064,/MidiDevice/note076,/MidiDevice/note088,/MidiDevice/note100,/MidiDevice/note112,/MidiDevice/note124]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Keyboard

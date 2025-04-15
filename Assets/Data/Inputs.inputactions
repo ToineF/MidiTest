@@ -1,0 +1,371 @@
+{
+    "name": "Inputs",
+    "maps": [
+        {
+            "name": "Keyboard",
+            "id": "ba42f07c-c3d5-4ead-bfbd-4ca792e82307",
+            "actions": [
+                {
+                    "name": "PressC",
+                    "type": "Value",
+                    "id": "580a35ae-0935-46c2-a5b4-9e4e48005ed3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PressD",
+                    "type": "Value",
+                    "id": "32327c14-2c0e-49d5-ba92-f49b5f8d6616",
+                    "expectedControlType": "MidiNote",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PressE",
+                    "type": "Value",
+                    "id": "7ab706cf-12aa-4117-af71-0ae52eb110fa",
+                    "expectedControlType": "MidiNote",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "72accf5f-e268-4f2c-84f3-2af9e57a2475",
+                    "path": "<MidiDevice>/note012",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0012746-f0b0-45ce-9f2b-988cd1ffb70d",
+                    "path": "<MidiDevice>/note024",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0800e704-4eb8-49b7-b352-377a2428927c",
+                    "path": "<MidiDevice>/note036",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3eff67e-5033-4180-9380-6b53bcec85d0",
+                    "path": "<MidiDevice>/note048",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e50cee06-1fde-4bcc-849c-f4ef75db3b5a",
+                    "path": "<MidiDevice>/note060",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "55daeb0c-5d1e-439e-b9e9-838d06ee865a",
+                    "path": "<MidiDevice>/note072",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "98cc0387-ed28-42db-bdb8-fce720ddacef",
+                    "path": "<MidiDevice>/note084",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d504b63e-f196-40f7-9cbb-8712bb1cebd5",
+                    "path": "<MidiDevice>/note096",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b62a2570-763d-4c51-b944-2ba4d844bca4",
+                    "path": "<MidiDevice>/note108",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9cf2bfd6-8632-49d4-b335-05f3dba1bfb8",
+                    "path": "<MidiDevice>/note120",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressC",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36c20cf5-ca06-47d6-a651-fd951ec0f1d7",
+                    "path": "<MidiDevice>/note014",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a2aea5f-9ab7-402f-9304-42bc04e07338",
+                    "path": "<MidiDevice>/note026",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4da43a54-d2c3-49b3-9781-ea227fe51b35",
+                    "path": "<MidiDevice>/note038",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a2d86fd0-4c67-482f-b117-cfb63b6a81bb",
+                    "path": "<MidiDevice>/note050",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "468432bc-6ab3-47d7-a322-1aa0728ee03e",
+                    "path": "<MidiDevice>/note062",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "998b5990-55f3-4b23-96cf-6d9202b44a09",
+                    "path": "<MidiDevice>/note074",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "092a6411-ca7f-4cb6-bee0-beef95d61f61",
+                    "path": "<MidiDevice>/note086",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3cebf304-1711-4452-871b-1327cf476ce5",
+                    "path": "<MidiDevice>/note098",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7a95c3d-4491-4514-8900-05ab07c92a27",
+                    "path": "<MidiDevice>/note110",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "98afb740-0aae-4510-9384-722677d3e371",
+                    "path": "<MidiDevice>/note122",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressD",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3b2bf36-26b0-4494-92fc-163f39be7a8a",
+                    "path": "<MidiDevice>/note016",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "50a06872-d448-4c23-803d-dd63e7dc2e5b",
+                    "path": "<MidiDevice>/note028",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23d63b3a-4a2e-4853-8680-675fbfa2fa66",
+                    "path": "<MidiDevice>/note040",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb71c03f-31f9-46b8-80ec-28956d62e88b",
+                    "path": "<MidiDevice>/note052",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a20be68c-d56d-49d6-893e-3baee63054f0",
+                    "path": "<MidiDevice>/note064",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa997170-be9a-4727-bf63-bfd11b3326fa",
+                    "path": "<MidiDevice>/note076",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cd5fedde-c5f5-43da-bf31-b49fc914a51f",
+                    "path": "<MidiDevice>/note088",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de454115-a9e0-44ae-98a7-d7ed6ec1e0be",
+                    "path": "<MidiDevice>/note100",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c13f3000-ea4b-4d39-b217-18e96b7ffeac",
+                    "path": "<MidiDevice>/note112",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45d7c005-0ab3-47dc-9e45-ac34d5e8fce6",
+                    "path": "<MidiDevice>/note124",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
