@@ -1,0 +1,133 @@
+{
+    "name": "Inputs",
+    "maps": [
+        {
+            "name": "Keyboard",
+            "id": "ba42f07c-c3d5-4ead-bfbd-4ca792e82307",
+            "actions": [
+                {
+                    "name": "PressKey",
+                    "type": "PassThrough",
+                    "id": "32327c14-2c0e-49d5-ba92-f49b5f8d6616",
+                    "expectedControlType": "MidiNote",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4da43a54-d2c3-49b3-9781-ea227fe51b35",
+                    "path": "<MidiDevice>/note038",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a2aea5f-9ab7-402f-9304-42bc04e07338",
+                    "path": "<MidiDevice>/note026",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a2d86fd0-4c67-482f-b117-cfb63b6a81bb",
+                    "path": "<MidiDevice>/note050",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36c20cf5-ca06-47d6-a651-fd951ec0f1d7",
+                    "path": "<MidiDevice>/note014",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "468432bc-6ab3-47d7-a322-1aa0728ee03e",
+                    "path": "<MidiDevice>/note062",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "998b5990-55f3-4b23-96cf-6d9202b44a09",
+                    "path": "<MidiDevice>/note074",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "092a6411-ca7f-4cb6-bee0-beef95d61f61",
+                    "path": "<MidiDevice>/note086",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3cebf304-1711-4452-871b-1327cf476ce5",
+                    "path": "<MidiDevice>/note098",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7a95c3d-4491-4514-8900-05ab07c92a27",
+                    "path": "<MidiDevice>/note110",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "98afb740-0aae-4510-9384-722677d3e371",
+                    "path": "<MidiDevice>/note122",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
