@@ -66,11 +66,13 @@ public class KeyboardGenerator : MonoBehaviour
 
     private void OnNoteOn(MidiNoteControl midiNote, float velocity)
     {
+        if (_keys.ContainsKey(midiNote.noteNumber) == false) return;
         Debug.Log(midiNote.shortDisplayName);
         _keys[midiNote.noteNumber].On(velocity);
     }
     private void OnNoteOff(MidiNoteControl midiNote)
     {
+        if (_keys.ContainsKey(midiNote.noteNumber) == false) return;
         _keys[midiNote.noteNumber].Off();
     }
 }

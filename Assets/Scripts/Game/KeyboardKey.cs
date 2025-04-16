@@ -15,10 +15,12 @@ public class KeyboardKey : MonoBehaviour
     public void On(float velocity)
     {
         _sprite.color = Color.yellow;
+        _animator.SetBool("Sings", true);
     }
 
     public void Off()
     {
         _sprite.color = _startColor;
+        _animator.SetBool("Sings", false);
     }
 }
