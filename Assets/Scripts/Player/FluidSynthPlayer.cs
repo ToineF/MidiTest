@@ -1,9 +1,11 @@
 using System;
-using System.Collections;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-public class FluidSynthPlayer : MonoBehaviour
+/// <summary>
+/// Uses FluidSynth to play sounds to an AudioSource (low-leve)
+/// </summary>
+public abstract class FluidSynthPlayer : MonoBehaviour
 {
     [DllImport("fluidsynth-3", CallingConvention = CallingConvention.Cdecl)]
     private static extern IntPtr new_fluid_settings();
@@ -53,10 +55,10 @@ public class FluidSynthPlayer : MonoBehaviour
 
     private int _sampleRate = 44100;
 
-    void Start()
+    private void Start()
     {
         _settings = new_fluid_settings();
-        fluid_settings_setnum(_settings, "synth.sample-rate", 44100.0);
+        fluid_settings_setnum(_settings, "synth.sample-rate", _sampleRate);
 
         fluid_settings_setstr(_settings, "audio.driver", "file"); // disable internal playback
         _synth = new_fluid_synth(_settings);
@@ -66,23 +68,9 @@ public class FluidSynthPlayer : MonoBehaviour
         {
             Debug.LogError("Failed to load soundfont.");
         }
-
-        // Play a test note
-        StartCoroutine(PlayAllNotes());
     }
-
-    IEnumerator PlayAllNotes()
-    {
-        for (int note = 0; note < 128; note++)
-        {
-            fluid_synth_noteon(_synth, 0, note, 100); // channel 0, note, velocity 100
-            yield return new WaitForSeconds(0.2f);     // hold note for 0.2s
-            fluid_synth_noteoff(_synth, 0, note);      // release note
-        }
-    }
-
-
-    void OnAudioFilterRead(float[] data, int channels)
+    
+    private void OnAudioFilterRead(float[] data, int channels)
     {
         int frames = data.Length / channels;
 
@@ -132,5 +120,15 @@ public class FluidSynthPlayer : MonoBehaviour
 
         if (_leftHandle.IsAllocated) _leftHandle.Free();
         if (_rightHandle.IsAllocated) _rightHandle.Free();
+    }
+
+    protected void NoteOn(int key, int velocity)
+    {
+        fluid_synth_noteon(_synth, 0, key, velocity);
+    }
+
+    protected void NoteOff(int key)
+    {
+        fluid_synth_noteoff(_synth, 0, key);
     }
 }
