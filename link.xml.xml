@@ -1,0 +1,6 @@
+<linker>
+  <assembly fullname="Minis">
+    <type fullname="Minis.MidiDevice" preserve="all"/>
+    <type fullname="Minis.MidiNoteControl" preserve="all"/>
+  </assembly>
+</linker>

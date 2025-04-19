@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -63,7 +64,9 @@ public abstract class FluidSynthPlayer : MonoBehaviour
         fluid_settings_setstr(_settings, "audio.driver", "file"); // disable internal playback
         _synth = new_fluid_synth(_settings);
 
-        int loadResult = fluid_synth_sfload(_synth, $"Assets/Resources/Soundfonts/{_soundFontName}.sf2", 1);
+	string path = Path.Combine(Application.streamingAssetsPath, "Soundfonts", $"{_soundFontName}.sf2");
+        int loadResult = fluid_synth_sfload(_synth, path, 1);
+	File.AppendAllText(Path.Combine(Application.persistentDataPath, "log.txt"), $"SF2 load: {loadResult} @ {path}\n");
         if (loadResult < 0)
         {
             Debug.LogError("Failed to load soundfont.");

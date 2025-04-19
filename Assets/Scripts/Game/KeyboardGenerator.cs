@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Minis;
 using UnityEngine;
@@ -74,5 +75,15 @@ public class KeyboardGenerator : MonoBehaviour
     {
         if (_keys.ContainsKey(midiNote.noteNumber) == false) return;
         _keys[midiNote.noteNumber].Off();
+    }
+    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H)) _keys[60].On(100);
+        if (Input.GetKeyUp(KeyCode.H)) _keys[60].Off();
+        if (Input.GetKeyDown(KeyCode.J)) _keys[61].On(100);
+        if (Input.GetKeyUp(KeyCode.J)) _keys[61].Off();
+        if (Input.GetKeyDown(KeyCode.K)) _keys[62].On(100);
+        if (Input.GetKeyUp(KeyCode.K)) _keys[62].Off();
     }
 }
