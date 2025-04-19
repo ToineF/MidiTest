@@ -25,13 +25,21 @@ public class InstrumentPlayer : FluidSynthPlayer
         NoteOff(midiNote.noteNumber);
     }
     
+    
+    //#if UNITY_EDITOR
+    /// <summary>
+    /// Debug to use piano without the midi keyboard
+    /// </summary>
+    private KeyCode[] _debugInputs = new KeyCode[] { KeyCode.Tab, KeyCode.Q, KeyCode.W, KeyCode.E, KeyCode.R, KeyCode.T, KeyCode.Y, KeyCode.U, KeyCode.I, KeyCode.O, KeyCode.P };
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H)) NoteOn(60,100);
-        if (Input.GetKeyUp(KeyCode.H)) NoteOff(60);
-        if (Input.GetKeyDown(KeyCode.J)) NoteOn(61,100);
-        if (Input.GetKeyUp(KeyCode.J)) NoteOff(61);
-        if (Input.GetKeyDown(KeyCode.K)) NoteOn(62,100);
-        if (Input.GetKeyUp(KeyCode.K)) NoteOff(62);
+        for (int i = 0; i < _debugInputs.Length; i++)
+        {
+            var input = _debugInputs[i];
+            var key = 36 + i * 6;
+            if (Input.GetKeyDown(input)) NoteOn(key, 100);
+            if (Input.GetKeyUp(input)) NoteOff(key);
+        }
     }
+    //#endif
 }

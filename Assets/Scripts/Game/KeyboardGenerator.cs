@@ -41,7 +41,7 @@ public class KeyboardGenerator : MonoBehaviour
 
         // Offsets parent
         _parent.localScale *= 0.4f;
-        _parent.transform.localPosition += Vector3.left * 9f;
+        _parent.transform.localPosition -= new Vector3(9f, 2f);
     }
 
     private KeyboardKey SpawnKey(int note, ref float totalSpacing)
@@ -77,13 +77,20 @@ public class KeyboardGenerator : MonoBehaviour
         _keys[midiNote.noteNumber].Off();
     }
     
+    //#if UNITY_EDITOR
+    /// <summary>
+    /// Debug to use piano without the midi keyboard
+    /// </summary>
+    private KeyCode[] _debugInputs = new KeyCode[] { KeyCode.Tab, KeyCode.Q, KeyCode.W, KeyCode.E, KeyCode.R, KeyCode.T, KeyCode.Y, KeyCode.U, KeyCode.I, KeyCode.O, KeyCode.P };
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H)) _keys[60].On(100);
-        if (Input.GetKeyUp(KeyCode.H)) _keys[60].Off();
-        if (Input.GetKeyDown(KeyCode.J)) _keys[61].On(100);
-        if (Input.GetKeyUp(KeyCode.J)) _keys[61].Off();
-        if (Input.GetKeyDown(KeyCode.K)) _keys[62].On(100);
-        if (Input.GetKeyUp(KeyCode.K)) _keys[62].Off();
+        for (int i = 0; i < _debugInputs.Length; i++)
+        {
+            var input = _debugInputs[i];
+            var key = _keys[36 + i * 6];
+            if (Input.GetKeyDown(input)) key.On(100);
+            if (Input.GetKeyUp(input)) key.Off();
+        }
     }
+    //#endif
 }

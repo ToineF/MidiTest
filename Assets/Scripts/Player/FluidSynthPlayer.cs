@@ -64,15 +64,20 @@ public abstract class FluidSynthPlayer : MonoBehaviour
         fluid_settings_setstr(_settings, "audio.driver", "file"); // disable internal playback
         _synth = new_fluid_synth(_settings);
 
-	string path = Path.Combine(Application.streamingAssetsPath, "Soundfonts", $"{_soundFontName}.sf2");
+	    LoadSoundfont(_soundFontName);
+    }
+
+    public void LoadSoundfont(string soundFontName)
+    {
+        string path = Path.Combine(Application.streamingAssetsPath, "Soundfonts", $"{soundFontName}.sf2");
         int loadResult = fluid_synth_sfload(_synth, path, 1);
-	File.AppendAllText(Path.Combine(Application.persistentDataPath, "log.txt"), $"SF2 load: {loadResult} @ {path}\n");
+        File.AppendAllText(Path.Combine(Application.persistentDataPath, "log.txt"), $"SF2 load: {loadResult} @ {path}\n");
         if (loadResult < 0)
         {
             Debug.LogError("Failed to load soundfont.");
         }
     }
-    
+
     private void OnAudioFilterRead(float[] data, int channels)
     {
         int frames = data.Length / channels;
